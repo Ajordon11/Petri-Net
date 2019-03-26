@@ -8,9 +8,9 @@ public class ResetArc extends Arc {
         this.toEntity = toEntity;
         if (!arcPathCheck(fromEntity,toEntity)) {
             if (fromEntity.getLabel() == null || toEntity.getLabel() == null)
-                throw new NotAnArcException();
+                throw new NotAnArcException(true);
             else
-                throw new NotAnArcException(fromEntity, toEntity);
+                throw new NotAnArcException(fromEntity, toEntity, true);
         }
         this.mark = 1;
         updateTransition(fromEntity,toEntity);

@@ -1,5 +1,6 @@
 package entities;
 
+//basic class for Place or Transition
 public class Entity {
     long ID;
     String label;

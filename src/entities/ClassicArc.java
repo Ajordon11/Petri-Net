@@ -40,6 +40,8 @@ public class ClassicArc extends Arc {
     ClassicArc() throws NotAnArcException {
         throw new NotAnArcException("Arc must have entry and exit!");
     }
-
+    public void addMark(int toAdd){
+        this.mark += toAdd;
+    }
 
 }
